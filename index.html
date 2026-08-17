@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="اطلب باك 3 تيشورتات بجودة ممتازة بسعر 220 درهم، والتوصيل حتى باب الدار.">
+  <title>اطلب الآن | باك 3 تيشورتات</title>
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Tahoma, Arial, sans-serif;
+      background:#f5f7f6;
+      color:#111;
+      line-height:1.7;
+    }
+    .hero{
+      background:linear-gradient(145deg,#071b10,#0b3f20 55%,#08c85a);
+      padding:18px 12px 30px;
+      text-align:center;
+    }
+    .wrap{max-width:760px;margin:auto}
+    .badge{
+      display:inline-block;background:#111;color:#fff;border:2px solid #20ed70;
+      border-radius:999px;padding:7px 16px;font-weight:800;font-size:14px;
+      margin-bottom:12px;
+    }
+    .hero h1{color:#fff;font-size:clamp(28px,7vw,52px);line-height:1.15;margin:4px 0 8px}
+    .hero h1 span{color:#18ed70}
+    .hero p{color:#eafff1;margin:0 auto 18px;font-size:18px;font-weight:700}
+    .product-image{
+      width:100%;max-width:544px;height:auto;display:block;margin:0 auto;
+      border-radius:20px;box-shadow:0 18px 45px rgba(0,0,0,.35);
+      border:3px solid #19eb6d;
+    }
+    .price{
+      display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+      background:#ff7a00;color:#fff;padding:8px 22px;border-radius:14px;
+      font-size:34px;font-weight:900;box-shadow:0 8px 20px rgba(0,0,0,.2)
+    }
+    .price small{font-size:16px}
+    section{padding:30px 14px}
+    .card{
+      background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 30px rgba(0,0,0,.08);
+      margin-bottom:18px;
+    }
+    .card h2{margin-top:0;font-size:27px}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .feature{
+      border:2px solid #dff8e9;background:#f8fffb;border-radius:16px;padding:14px;
+      font-weight:800;text-align:center
+    }
+    .feature b{display:block;color:#09b953;font-size:21px;margin-bottom:4px}
+    .offer{
+      background:#101010;color:#fff;border:3px solid #17e66a;text-align:center
+    }
+    .offer .big{font-size:28px;font-weight:900;color:#18ed70}
+    form{display:grid;gap:13px}
+    label{font-weight:800}
+    input,select,textarea{
+      width:100%;padding:15px;border:2px solid #ddd;border-radius:13px;
+      font-size:16px;font-family:inherit;outline:none;background:#fff
+    }
+    input:focus,select:focus,textarea:focus{border-color:#13cf5b}
+    textarea{min-height:90px;resize:vertical}
+    .submit{
+      border:0;border-radius:14px;padding:16px;background:#0ac95a;color:#fff;
+      font-size:20px;font-weight:900;cursor:pointer;box-shadow:0 8px 20px rgba(10,201,90,.25)
+    }
+    .submit:disabled{opacity:.65;cursor:wait}
+    .note{text-align:center;font-size:13px;color:#666;margin:8px 0 0}
+    .success{
+      display:none;background:#e9fff1;color:#087a36;border:2px solid #13c85b;
+      border-radius:14px;padding:15px;text-align:center;font-weight:900
+    }
+    .error{
+      display:none;background:#fff0f0;color:#a40000;border:2px solid #e04444;
+      border-radius:14px;padding:12px;text-align:center;font-weight:700
+    }
+    .sticky{
+      position:fixed;bottom:12px;left:12px;right:12px;z-index:20;
+      display:none;background:#0ac95a;color:#fff;text-align:center;
+      padding:13px;border-radius:15px;font-weight:900;text-decoration:none;
+      box-shadow:0 10px 28px rgba(0,0,0,.22)
+    }
+    footer{text-align:center;padding:35px 15px 85px;color:#777;font-size:13px}
+    @media(max-width:560px){
+      .features{grid-template-columns:1fr}
+      .card{padding:18px}
+      .sticky{display:block}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="badge">🔥 عرض محدود</div>
+      <h1>باك <span>3 تيشورتات</span><br>بجودة ممتازة</h1>
+      <p>اطلب الآن والدفع عند الاستلام — والتوصيل حتى باب الدار.</p>
+      <img class="product-image" src="product.jpg" alt="عرض باك 3 تيشورتات">
+      <div class="price">220 <small>درهم</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="card">
+          <h2>لماذا تختار هذا الباك؟</h2>
+          <div class="features">
+            <div class="feature"><b>جودة ممتازة</b>قماش مريح ومناسب للاستعمال اليومي</div>
+            <div class="feature"><b>ألوان ثابتة</b>ألوان عملية وأنيقة</div>
+            <div class="feature"><b>خياطة متينة</b>تشطيب يساعد على تحمل الاستعمال</div>
+            <div class="feature"><b>مقاسات متعددة</b>M · L · XL · XXL</div>
+          </div>
+        </div>
+
+        <div class="card offer">
+          <div class="big">220 درهم فقط</div>
+          <div>باك 3 تيشورتات</div>
+          <div>🚚 توصيل سريع حتى باب الدار</div>
+          <div>💵 الدفع عند الاستلام</div>
+        </div>
+
+        <div class="card" id="order">
+          <h2>🛒 أكمل طلبك الآن</h2>
+
+          <div class="success" id="success">
+            تم إرسال طلبك بنجاح ✅ سنتواصل معك لتأكيد الطلب.
+          </div>
+
+          <div class="error" id="error">
+            حدث خطأ. تأكد من المعلومات وحاول مرة أخرى.
+          </div>
+
+          <form id="orderForm">
+            <div>
+              <label for="name">الاسم الكامل</label>
+              <input id="name" name="name" type="text" placeholder="مثال: محمد العلوي" required>
+            </div>
+
+            <div>
+              <label for="phone">رقم الهاتف</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel"
+                     placeholder="06XXXXXXXX" required>
+            </div>
+
+            <div>
+              <label for="city">المدينة</label>
+              <input id="city" name="city" type="text" placeholder="مثال: طنجة" required>
+            </div>
+
+            <div>
+              <label for="address">العنوان</label>
+              <textarea id="address" name="address"
+                        placeholder="الحي، الشارع، رقم المنزل..." required></textarea>
+            </div>
+
+            <button class="submit" id="submitBtn" type="submit">اطلب الآن — 220 درهم</button>
+            <p class="note">لن يتم إرسال طلبك إلا بعد الضغط على زر «اطلب الآن».</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="sticky" href="#order">اطلب الآن — 220 درهم</a>
+
+  <footer>
+    جميع الحقوق محفوظة © 2026
+  </footer>
+
+  <script>
+    // Google Apps Script Web App URL
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyt0a9SNM_Dwp7o9qbfkGj0E4LHDHpKE8Ro81DI-y9TJyRaMJ3wpBuAZVUdokYasRKXRg/exec";
+
+    const form = document.getElementById("orderForm");
+    const button = document.getElementById("submitBtn");
+    const success = document.getElementById("success");
+    const errorBox = document.getElementById("error");
+
+    form.addEventListener("submit", async function(e){
+      e.preventDefault();
+      success.style.display = "none";
+      errorBox.style.display = "none";
+
+      const phone = document.getElementById("phone").value.trim();
+      const phoneDigits = phone.replace(/\s|-/g, "");
+      if(!/^(0\d{9}|\+212\d{9})$/.test(phoneDigits)){
+        errorBox.textContent = "أدخل رقم هاتف مغربي صحيح، مثل 0612345678.";
+        errorBox.style.display = "block";
+        return;
+      }
+
+      const payload = {
+        name: document.getElementById("name").value.trim(),
+        phone: phone,
+        city: document.getElementById("city").value.trim(),
+        address: document.getElementById("address").value.trim()
+      };
+
+      button.disabled = true;
+      button.textContent = "جاري إرسال الطلب...";
+
+      try {
+        // text/plain avoids a browser CORS preflight while Apps Script still receives JSON text.
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {"Content-Type": "text/plain;charset=utf-8"},
+          body: JSON.stringify(payload)
+        });
+
+        success.style.display = "block";
+        form.reset();
+        success.scrollIntoView({behavior:"smooth", block:"center"});
+      } catch(err) {
+        errorBox.textContent = "تعذر إرسال الطلب. حاول مرة أخرى.";
+        errorBox.style.display = "block";
+      } finally {
+        button.disabled = false;
+        button.textContent = "اطلب الآن — 220 درهم";
+      }
+    });
+  </script>
+</body>
+</html>
